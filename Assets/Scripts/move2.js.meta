@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 3606bbba30d88ad47975f380ed9afe91
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - cam: {instanceID: 0}
+  - text: {instanceID: 0}
+  - txt: {instanceID: 0}
+  - tpClip: {fileID: 8300000, guid: 47dbdd751b8b9be48aa481f31cbdaf13, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

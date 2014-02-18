@@ -1,0 +1,8 @@
+Temp/*
+Library/*
+Build/*
+*.pidb
+*.userprefs
+*.sln
+Assets/Audio/Mario_Jumping-Mike_Koenig-989896458.wav
+Assets/Audio/Mario_Jumping-Mike_Koenig-989896458.wav.meta
