@@ -5,7 +5,7 @@ class MyEditorScript {
         static string TARGET_DIR = "C:/Users/Aaron/Desktop";
 
         [MenuItem ("Custom/Build Android")]
-        static void PerformMacOSXBuild ()
+        static void PerformAndroidBuild ()
         {
                  string target_dir = APP_NAME + ".apk";
                  GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.Android() {
