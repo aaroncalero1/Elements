@@ -8,7 +8,9 @@ class MyEditorScript {
         static void PerformAndroidBuild ()
         {
                  string target_dir = APP_NAME + ".apk";
-                 GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.Android() {
+                 GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.Android, BuildOptions.None);
+        }
+        private static string[] FindEnabledEditorScenes(){
 		List<string> EditorScenes = new List<string>();
 		foreach(EditorBuildSettingsScene scene in EditorBuildSettings.scenes) {
 			if (!scene.enabled) continue;
