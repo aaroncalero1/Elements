@@ -1,15 +1,15 @@
 class MyEditorScript {
-        static string[] SCENES = FindEnabledEditorScenes();
+        static String[] SCENES = FindEnabledEditorScenes();
 
-        static string APP_NAME = "Elements";
-        static string TARGET_DIR = "C:/Users/Aaron/Desktop";
+        static String APP_NAME = "Elements";
+        static String TARGET_DIR = "C:/Users/Aaron/Desktop";
 
         [MenuItem ("Custom/Build Android")]
         static void PerformAndroidBuild ()
         {
-                 string target_dir = APP_NAME + ".apk";
+                 String target_dir = APP_NAME + ".apk";
                  GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.Android() {
-		List<string> EditorScenes = new List<string>();
+		List<String> EditorScenes = new List<String>();
 		foreach(EditorBuildSettingsScene scene in EditorBuildSettings.scenes) {
 			if (!scene.enabled) continue;
 			EditorScenes.Add(scene.path);
@@ -17,10 +17,10 @@ class MyEditorScript {
 		return EditorScenes.ToArray();
 	}
 
-        static void GenericBuild(string[] scenes, string target_dir, BuildTarget build_target, BuildOptions build_options)
+        static void GenericBuild(String[] scenes, String target_dir, BuildTarget build_target, BuildOptions build_options)
         {
                 EditorUserBuildSettings.SwitchActiveBuildTarget(build_target);
-                string res = BuildPipeline.BuildPlayer(scenes,target_dir,build_target,build_options);
+                String res = BuildPipeline.BuildPlayer(scenes,target_dir,build_target,build_options);
                 if (res.Length > 0) {
                         throw new Exception("BuildPlayer failure: " + res);
                 }
