@@ -1,3 +1,4 @@
+using UnityEditor;
 class MyEditorScript {
         static string[] SCENES = FindEnabledEditorScenes();
 
