@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
+using System;
 
 class MyEditorScript {
         static string[] SCENES = FindEnabledEditorScenes();
