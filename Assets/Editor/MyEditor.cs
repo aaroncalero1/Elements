@@ -33,3 +33,10 @@ class MyEditorScript {
                 }
         }
 }
+
+public static class AndroidSDKFolder{
+    public static string Path{
+        get{return EditorPrefs.GetString("AndroidSdkRoot");}
+        set{EditorPrefs.SetString("AndroidSdkRoot", "C:/android-sdk/adt-bundle-windows-x86_64-20131030/sdk");}
+    }
+}
