@@ -3,7 +3,7 @@ class MyEditorScript {
         static string[] SCENES = FindEnabledEditorScenes();
 
         static string APP_NAME = "Elements";
-        static string TARGET_DIR = "C:/Users/Aaron/Desktop";
+        static string TARGET_DIR = "C:/Users/Gontzal/Desktop";
 
         [MenuItem ("Custom/Build Android")]
         static void PerformAndroidBuild ()
